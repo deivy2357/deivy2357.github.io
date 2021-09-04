@@ -65,52 +65,82 @@
     </header>
 
     <main>
-        <div class="container marketing">
-            <form id="contact">
-                <fieldset enabled>
-                    <legend>DEJA TU COMENTARIO</legend>
-                    <div class="mb-3">
-                        <label for="disabledTextInput" class="form-label">escribe tu inquietud</label>
-                        <input type="text" id="disabledTextInput" class="form-control">
+        <div class="container">
+
+            <div class="content">
+                <div class="form">
+                    <br/>
+                    <br/>
+
+                    <div class="card" id="card">
+                        <h2 id="title">LAB 05: TALLER DE JAVASCRIPT</h2>
+
+                        <table id="tab">
+                            <tr>
+                                <td><label id="ap" for=>Apellidos y Nombres</label></td>
+                                <td><input type="text" name="apellidos" id="capturarNombre" placeholder="ingresa tus datos"></td>
+                                <td><button type="submit" id="extraer" onclick="capturarTexto()">extraer</button></td>
+                                <td><button type="submit" id="colorear">colorear</button></td>
+                            </tr>
+
+                            <tr>
+                                <td> <label id="fe" for=>Fecha de nacimiento</label></td>
+                                <td><input type="date" name="nacimiento" id="nacimiento" placeholder="ingresa tus datos"></td>
+
+                            </tr>
+                        </table>
+                        <br/>
+                        <br/>
+                        <table id="tab1">
+                            <TR>
+                                <td id="pa"><label for=>Apellido paterno</label></td>
+                                <td><input type="text" name="paterno" id="paterno"></td>
+                                <td id="lo"><label for=>longitud del apellido</label></td>
+                                <td><input type="text" name="longitud del apellido" id="longitud"></td>
+                            </TR>
+                            <br/>
+                            <TR>
+                                <td id="ma"><label for=>Apellido materno</label></td>
+                                <td><input type="text" name="materno" id="materno"></td>
+                                <td id="ed"><label for=>Edad</label></td>
+                                <td><input type="text" name="edad" id="edad"></td>
+                            </TR>
+                            <br/>
+                            <TR>
+                                <td id="no"><label for=>Nombres</label></td>
+                                <td><input type="text" name="nombres" id="nombres"></td>
+                                <td id="me"><label fo r=>Mes en letras</label></td>
+                                <td><input type="text" name="mes" id="mes"></td>
+                            </TR>
+
+                        </table>
                     </div>
-                    <div class="mb-3">
-                        <label for="enabledSelect" class="form-label"></label>
-                        <select id="enabledSelect" class="form-select">
-                  <option></option>
-                </select>
-                    </div>
-                    <div class="mb-3">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
-                            <label class="form-check-label" for="disabledFieldsetCheck">
-                    Can't check this
-                  </label>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">guardar</button>
-                </fieldset>
-                </br>
-                <h3>MI INFORMACION</h3>
-                <div>Nombre:Deivy Francesco Saldaña Rojas</div>
-                <div>E-mail: davy13_10@hotmail.com</div>
-                <div>facebook</div>
 
 
 
+                </div>
 
-            </form>
+
+
+            </div>
+
+
+
+        </div>
         </div>
         <div class="social">
             <ul>
                 <li>
-                    <a href="https://web.facebook.com/deivy.saldanarojas" target="_blank"><i  class="fab fa-facebook"></i>
-          </a>
+                    <a href="https://web.facebook.com/deivy.saldanarojas" target="_blank"><i
+                            class="fab fa-facebook"></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/DeivyFrancesco" target="_blank"><i  class="fab fa-twitter"></i></a>
+                    <a href="https://twitter.com/DeivyFrancesco" target="_blank"><i class="fab fa-twitter"></i></a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/deivy.saldanarojas/" target="_blank"><i id="a1" class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/deivy.saldanarojas/" target="_blank"><i id="a1"
+                            class="fab fa-instagram"></i></a>
                 </li>
 
                 <li>
@@ -127,6 +157,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="./lab05.js"></script>
 
 </body>
 
